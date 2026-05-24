@@ -148,9 +148,9 @@ def _build_voxel_irregularity(pts, excluded, voxel_size=0.45):
 
 def _crfold_prepare(
     pc_data,
-    knn_num=8,
-    low_threshold=-0.4,
-    high_threshold=0.6,
+    knn_num=10,
+    low_threshold=-0.55,
+    high_threshold=0.68,
     intensity_const=1,
     nbs_mean_d_const=5,
     pca_const=1,
@@ -280,9 +280,9 @@ def _crfold_refine_temporal(
 
 def CRFOLD_desnow(
     pc_data,
-    knn_num=8,
-    low_threshold=-0.4,
-    high_threshold=0.6,
+    knn_num=10,
+    low_threshold=-0.55,
+    high_threshold=0.68,
     intensity_const=1,
     nbs_mean_d_const=5,
     pca_const=1,
