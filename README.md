@@ -44,3 +44,13 @@ Both scripts scan all sequences under `sequences/`, evaluate up to 50 frames per
 - `result_CRFOLD_t.json` — temporal
 
 Metrics include average precision, recall, F1, and per-frame runtime.
+
+## Tuned parameters (single-frame)
+
+Hyperparameters were tuned on WADS-style evaluation with **temporal mode off** (`CRFOLD.py`). Defaults in `CRFOLD.py` and `CRFOLD_t.py` now use the tuned values.
+
+| Parameter        | Original | Tuned |
+| ---------------- | -------- | ----- |
+| `knn_num`        | 8        | 10    |
+| `low_threshold`  | -0.4     | -0.55 |
+| `high_threshold` | 0.6      | 0.68  |
